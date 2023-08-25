@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=divece-witdh, initial-scale=1.0">
+    <title>Project Pharma</title>
+    <link rel="stylesheet" href="tienda-style.css">
+    <link rel="shortcut icon" href="Imagenes/icon_farmacia.ico">
+    
+</head>
+<body>
+     
+      <header>
+    
+        <div class="barra-superior">
+         <div class="icon">
+             <img src="Imagenes/icon_farmacia.png" alt="">
+             <h1> Project Pharma</h1>
+         </div>
+             
+        
+              
+        <div id="icons">
+            <button id="dark-mode-button">
+                 <img id="dark-mode-icon" src="Imagenes/light-mode.png" alt="Modo Día">
+             </button>
+        
+          <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="icon-cart"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+					/>
+				</svg>
+				<div class="count-products">
+					<span id="contador-productos">0</span>
+				</div>
+
+            </div>
+            
+            
+				<div class="container-cart-products hidden-cart">
+                    <div class="row-product">
+                        <div class="cart-product">
+                            <div class="info-cart-product">
+                                <span class="cantidad-producto-carrito">0</span>
+                                <p class="titulo-producto-carrito"> - </p>
+                                <span class="precio-producto-carrito">$0</span>
+                            </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="icon-close"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
+                            </svg>
+                        </div>
+
+                    </div>
+					
+                    <div class="cart-total">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$0</span>
+                    </div>
+				</div>
+			</div>       
+                
+	       </div>
+	       </div>
+    <div class="barra-inferior">
+        <div class="menu">
+           <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contactos</a></li>
+            </ul>
+        </div>
+    </div>        
+         </header>
+         
+          
+         <div class="selector"> 
+             <div class="elegir"><button id="cont1">
+                 <img src="Imagenes/icon-pastillas.png" alt="">
+                 <h2>Pastillas</h2>
+             </button></div>
+             <div class="elegir"><button id="cont2">
+                 <img src="Imagenes/icon-jarabe.png" alt="">
+                 <h2>Jarabes</h2>
+             </button></div>
+             <div class="elegir"><button id="cont3">
+                 <img src="Imagenes/icon-suplemento.png" alt="">
+                 <h2>Suplementos Alimenticios</h2>
+             </button></div>
+         </div>
+         
+         <div class="container-items">
+            <div class="item item1">
+                <figure>
+                   <img 
+                      src=Imagenes/prdct_Tylenol.jpg
+                           alt="Paracetamol"
+                   />
+                   </figure>
+                   <div class="info-product">
+                       <h2>Tylenol 500mg</h2>
+                       <p class="price">$50</p>
+                       <button class="btn-add-cart">Añadir al carrito</button>
+                        </div>
+            </div>
+            <div class="item item1">
+                <figure>
+                    <img 
+                        src=Imagenes/prdct_Ibuprofeno.jpeg
+                        alt="Ibuprofeno"
+                       />
+                </figure>
+                <div class="info-product">
+                    <h2>Ibuprofeno 400mg</h2>
+                    <p class="price">$60</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div> 
+            <div class="item item1">
+                <figure>
+                <img 
+                    src=Imagenes/prdct_Amoxicilina.jpg
+                    alt="Amoxicilina"
+                        />
+                </figure>
+                <div class="info-product">
+                    <h2>amoxicilina 500mg (caja de 10)</h2>
+                    <p class="price">$150</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div> 
+            <div class="item item1">
+                <figure>
+                    <img 
+                        src=Imagenes/prdct_Omeprazol.jpg
+                        alt="Omeprazol"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Omeprazol 20mg (caja de 14)</h2>
+                    <p class="price">$100</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+                </div> 
+                <div class="item item1">
+                    <figure>
+                        <img 
+                            src="Imagenes/prdct_Loratadina.jpg"
+                            alt="Loratadina"
+                                   />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Loratadina 10mg (caja de 20)</h2>
+                        <p class="price">$80</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div> 
+                <div class="item item1">
+                    <figure>
+                        <img 
+                            src=Imagenes/prdct_Aspirina.jpg
+                            alt="Aspirina"
+                            />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Aspirina 100 mg</h2>
+                        <p class="price">$40</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div> 
+                <div class="item item1">
+                    <figure>
+                        <img 
+                            src=Imagenes/prdct_Metformina.jpg
+                            alt="Metformina"
+                            />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Metformina 850mg (caja de 30)</h2>
+                        <p class="price">$120</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div> 
+                <div class="item item1">
+                    <figure>
+                        <img 
+                            src=Imagenes/prdct_Simvastatina.jpg
+                            alt="Simvastatina"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Simvastatina 20mg (caja de 30)</h2>
+                        <p class="price">$150</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div> 
+                <div class="item item1">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Dipirona.jpg
+                        alt="Dipirona"
+                            />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Dipirona 500mg (caja de 10)</h2>
+                        <p class="price">$60</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div> 
+                <div class="item item1">
+                    <figure>
+                        <img 
+                            src=Imagenes/prdct_Ciprofloxacina.jpg
+                            alt="Ciprofloxacina"
+                            />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Ciprofloxacina 500mg (caja de 14)</h2>
+                        <p class="price">$130</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div> 
+                <div class="item item1">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Enalapril.jpg
+                        alt="Enalapril"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Enalapril 10mg (caja de 30)</h2>
+                        <p class="price">$100</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div> 
+                <div class="item item1">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Losartan.jpg
+                        alt="Losartan"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Losartán 50 mg (Caja de 30)</h2>
+                        <p class="price">$120</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div> 
+                <div class="item item1">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Metoclopramida.jpg
+                        alt="Metoclopramida"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Metoclopramida 10mg (caja de 20)</h2>
+                        <p class="price">$70</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div> 
+                <div class="item item1">
+                    <figure>
+                        <img 
+                            src=Imagenes/prdct_Evital.jpg
+                            alt="Evital"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Evital</h2>
+                        <p class="price">$150</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div> 
+                <div class="item item1">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_VitaminaC.png
+                        alt="Vitamina C"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Vitamina C 500mg</h2>
+                        <p class="price">$40</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div> 
+                <div class="item item2">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Broncolin.jpg
+                        alt="Broncolin"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Broncolín</h2>
+                        <p class="price">$150</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item item2">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_%20Fluimucil.jpg
+                        alt="Fluimucil"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Fluimucil</h2>
+                        <p class="price">$120</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div> 
+
+                <div class="item item2">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Bisolvon.jpg
+                        alt="Bisolvon"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Bisolvon</h2>
+                        <p class="price">$130</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div> 
+                <div class="item item2">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Zyrtec.jpg
+                        alt="Zyrtec"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Zyrtec</h2>
+                        <p class="price">$100</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item item2">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_memphis.jpg
+                        alt="Memphis"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Ácido Valproico</h2>
+                        <p class="price">$100</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>  
+                <div class="item item2">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Prospan.jpg
+                        alt="Prospan"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Prospan</h2>
+                        <p class="price">$140</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item item2">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Mucoxin.jpeg
+                        alt="Mucoxin"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Mucoxin</h2>
+                        <p class="price">$160</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item item2">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Robitussin.jpg
+                        alt="Robitussin"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Robitussin</h2>
+                        <p class="price">$110</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item item2">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Apiretal.jpg
+                        alt="Apiretal"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Apiretal</h2>
+                        <p class="price">$170</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>    
+                <div class="item item3">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Centrum.jpg
+                        alt="Centrum"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Centrum Multivitaminico</h2>
+                        <p class="price">$250</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item item3">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Ensure.jpg
+                        alt="Ensure"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Ensure nutricional</h2>
+                        <p class="price">$180</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item item3">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Omega3.jpg
+                        alt="Omega3"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Omega 3 fish oil</h2>
+                        <p class="price">$120</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item item3">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Colageno.jpg
+                        alt="Colageno"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Colageno Hidrolizado</h2>
+                        <p class="price">$180</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item item3">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Proteina.jpg
+                        alt="Proteina"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Proteina en polvo</h2>
+                        <p class="price">$350</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item item3">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Sulfato.jpg
+                        alt="Sulfato Ferroso"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Sulfato Ferroso</h2>
+                        <p class="price">$100</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item item3">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_VitaminaD3.jpg
+                        alt="Vitamina D3"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Vitamina D3</h2>
+                        <p class="price">$90</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item item3">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Glucosamina.jpg
+                        alt="Glucosamina/Condroitina"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Glucosamina y Condroitina</h2>
+                        <p class="price">$200</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item item3">
+                    <figure>
+                        <img 
+                        src=Imagenes/prdct_Coenzimaq10.jpg
+                        alt="Glucosamina/Condroitina"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Coenzima Q10</h2>
+                        <p class="price">$180</p>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+            
+             </div>
+             
+             <footer>
+        <p>&copy; 2023 Project Pharma. Todos los derechos reservados.</p>
+    </footer>
+             
+             <script src="index.js"></script>
+             <script src="main.js"></script>   
+     </body>
+</html>
+
